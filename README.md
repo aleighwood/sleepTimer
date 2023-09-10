@@ -17,7 +17,9 @@ The 'Sleep-Timer' is triggered when the user moves there hand over the
 # Requirements
 
 [OLED display](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/) 
+
 [Ability to programme ESP-8266](https://www.instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP8266/)
+
 [IFTTT Google Sheets Integration](https://ifttt.com/google_sheets)
 
 # Spreadsheet Setup
