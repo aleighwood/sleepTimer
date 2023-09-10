@@ -41,4 +41,4 @@ Here is a screenshot of my sleep data from a few years ago (I made this device a
 
 ![Screenshot 2023-09-10 140743](https://github.com/aleighwood/sleepTimer/assets/86426050/cc1c724a-4a71-4c0c-b651-c2d1666b1f8b)
 
-If you want to contact me about this project / give some improvements etc just send me an email on my [site](arthurs.website)
+If you want to contact me about this project / give some improvements etc just send me an email on my [site](https://arthurs.website)
