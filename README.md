@@ -1,5 +1,5 @@
-# sleepTimer
-A device that records how long you sleep for and how long it takes you to fall asleep, then uplaods this data to Google Spreadsheets
+# Sleep Timer
+A device that records how long you sleep for and how long it takes you to fall asleep, then uploads this data to a Google Spreadsheet.
 
 # Working Principle
 ![57118](https://github.com/aleighwood/sleepTimer/assets/86426050/92cfe88e-999b-4309-99ab-769da68fd9dd)
