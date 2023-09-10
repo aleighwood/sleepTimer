@@ -1,6 +1,8 @@
 # Sleep Timer
 A device that records how long you sleep for and how long it takes you to fall asleep, then uploads this data to a Google Spreadsheet.
 
+I made this device in 2020, so please forgive any faux pas!
+
 # Working Principle
 ![57118](https://github.com/aleighwood/sleepTimer/assets/86426050/92cfe88e-999b-4309-99ab-769da68fd9dd)
 There are 3 modes of the device, selected by a potentiometer connected to an analog read pin:
