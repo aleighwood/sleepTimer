@@ -5,11 +5,13 @@ A device that records how long you sleep for and how long it takes you to fall a
 ![57118](https://github.com/aleighwood/sleepTimer/assets/86426050/92cfe88e-999b-4309-99ab-769da68fd9dd)
 There are 3 modes of the device:
 
-In-Bed: Selected when the user goes to bed, the user can trigger the sleep timer at any point (up to an hour after the most recent trigger). Starts the 'In'Bed' timer
-Reset: The timer will reset if 'Reset' is selected before 'In-Bed' is selected
-Send-Data: Selected when the user wakes up, sleep data is uploaded to a Google Spreadsheet using a webhook and [IFTTT](https://ifttt.com/).
+**In-Bed**: Selected when the user goes to bed, the user can trigger the sleep timer. Starts the 'In'Bed' timer
 
-The 'Sleep-Timer' is triggered when the user moves there hand over the 
+**Reset**: The timer will reset if 'Reset' is selected before 'In-Bed' is selected
+
+**Send-Data**: Selected when the user wakes up, sleep data is uploaded to a Google Spreadsheet using a webhook and [IFTTT](https://ifttt.com/).
+
+The sleep timer is triggered when the user moves their into the range of the PIR sensors, these may be placed on the floor by the side of your bed for example. When the sleep timer is trigged, the device assummes the user will fall asleep within 10 minuets. The user can trigger the sleep timer at any point up to 40 minuets after the most recent trigger - after this the trigger is locked so it is not activated when the user wakes up and triggers the PIR sensors.
 
 # Circuit Diagram 
 ![Screenshot 2023-08-20 114150](https://github.com/aleighwood/sleepTimer/assets/86426050/cda6f0f9-e93d-4a6b-82bd-040165173171)
@@ -21,6 +23,10 @@ The 'Sleep-Timer' is triggered when the user moves there hand over the
 [Ability to programme ESP-8266](https://www.instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP8266/)
 
 [IFTTT Google Sheets Integration](https://ifttt.com/google_sheets)
+
+# Note on the PIR sensors
+
+Two PIR sensors have been used, their values are AND-ed. This setup reduces erroneous PIR sensor triggering. 
 
 # Spreadsheet Setup
 
