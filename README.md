@@ -3,13 +3,16 @@ A device that records how long you sleep for and how long it takes you to fall a
 
 # Working Principle
 ![57118](https://github.com/aleighwood/sleepTimer/assets/86426050/92cfe88e-999b-4309-99ab-769da68fd9dd)
-There are 3 modes of the device:
+There are 3 modes of the device, selected my a potentiometer connected to an analog read pin:
 
-**In-Bed**: Selected when the user goes to bed, the user can trigger the sleep timer. Starts the 'In'Bed' timer
+**In-Bed**: Selected when the user goes to bed, the user can trigger the sleep timer. Starts the 'In-Bed' timer.
 
-**Reset**: The timer will reset if 'Reset' is selected before 'In-Bed' is selected
+**Reset**: The timer will reset if 'Reset' is selected before 'In-Bed' is selected.
 
-**Send-Data**: Selected when the user wakes up, sleep data is uploaded to a Google Spreadsheet using a webhook and [IFTTT](https://ifttt.com/).
+**Send-Data**: Selected when the user wakes up, sleep data is uploaded to a Google Spreadsheet using a webhook and [IFTTT](https://ifttt.com/). 3 values are calculated: 
++ Time in Bed (duration of **In-Bed** selected to **Send-Data** )
++ Time to fall asleep (duration of **In-Bed** selected to latest sleep timer trigger)
++ Time asleep  (latest sleep timer trigger to **Send-Data** selected)
 
 The sleep timer is triggered when the user moves their into the range of the PIR sensors, these may be placed on the floor by the side of your bed for example. When the sleep timer is trigged, the device assummes the user will fall asleep within 10 minuets. The user can trigger the sleep timer at any point up to 40 minuets after the most recent trigger - after this the trigger is locked so it is not activated when the user wakes up and triggers the PIR sensors.
 
@@ -24,7 +27,9 @@ The sleep timer is triggered when the user moves their into the range of the PIR
 
 [IFTTT Google Sheets Integration](https://ifttt.com/google_sheets)
 
-# Note on the PIR sensors
+# Hardware Note
+
+I used a Node-MCU with an ESP8266 chip, other dev boards are available. 
 
 Two PIR sensors have been used, their values are AND-ed. This setup reduces erroneous PIR sensor triggering. 
 
