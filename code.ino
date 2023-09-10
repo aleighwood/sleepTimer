@@ -14,15 +14,10 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #include <Wire.h>
 #include <SPI.h>
 
-const char* ssid = "devolo-4cc"; //enter your wifi network name
-const char* password = "SWESRFMRILBEEUZJ"; //enter your wifi password
+const char* ssid = "YOUR_WIFI_NAME"; //enter your wifi network name
+const char* password = "WIFI_PASSWORD"; //enter your wifi password
 
-//"BPBKCEAYREAEZMGZ"
-
-//const char* ssid     = "USH 2015 signal";
-//const char* password = "7112zoel";
-
-const char* resource = "/trigger/test/with/key/bkaP1dZ_-uQK9KgTx0oL3O"; //enter IFTTT key
+const char* resource = "/trigger/test/with/key/YOUR_IFTTT_KEY"; //enter IFTTT key
 const char* server = "maker.ifttt.com";
 
 String TimeShowFormatted(long ms) { //formats milliseconds to hh:mm:ss
