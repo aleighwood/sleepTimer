@@ -4,7 +4,8 @@ A device that records how long you sleep for and how long it takes you to fall a
 I made this device in 2020, so please forgive any faux pas!
 
 # Working Principle
-![image](https://github.com/aleighwood/sleepTimer/assets/86426050/804dbb65-45d1-43b0-93b4-6a400d2ae82a)
+
+![image](https://github.com/aleighwood/sleepTimer/assets/86426050/f9cabaa4-5d94-4b40-b2e5-4e2faf89c2f4)
 
 
 There are 3 modes of the device, selected by a potentiometer connected to an analog read pin:
