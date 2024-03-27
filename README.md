@@ -4,7 +4,8 @@ A device that records how long you sleep for and how long it takes you to fall a
 I made this device in 2020, so please forgive any faux pas!
 
 # Working Principle
-![image](https://github.com/aleighwood/sleepTimer/assets/86426050/e9249a13-9116-4119-a834-28e261949689)
+
+![sleep_sensor_diagram](https://github.com/aleighwood/sleepTimer/assets/86426050/55b3dfbf-cd53-4635-98a8-8ee9cdd9ffda)
 
 
 
